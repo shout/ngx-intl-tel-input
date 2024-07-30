@@ -1,22 +1,22 @@
 {
-	"name": "ngx-intl-tel-input",
-	"version": "3.3.0",
+	"name": "ngx-shout-intl-tel-input",
+	"version": "18.0.0",
 	"peerDependencies": {
-		"@angular/common": "8.x - 14.x",
-		"@angular/core": "8.x - 14.x",
-		"@angular/forms": "8.x - 14.x",
-		"google-libphonenumber": "^3.2.3",
+		"@angular/common": "8.x - 18.x",
+		"@angular/core": "8.x - 18.x",
+		"@angular/forms": "8.x - 18.x",
+		"google-libphonenumber": "^3.2.38",
 		"intl-tel-input": "^17.0.3",
 		"ngx-bootstrap": ">= 6.0.0"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/webcat12345/ngx-intl-tel-input"
+		"url": "git+https://github.com/shout/ngx-intl-tel-input"
 	},
-	"author": {
-		"name": "webcat12345",
-		"email": "webcat91@gmail.com"
-	},
+  "author": {
+    "name": "Shout",
+    "url": "https://github.com/shout/"
+  },
 	"keywords": [
 		"angular",
 		"ng8",
@@ -28,14 +28,19 @@
 		"angular 11",
 		"angular 12",
 		"angular 13",
-    	"angular 14",
+    "angular 14",
+    "angular 15",
+    "angular 16",
+    "angular 17",
+    "angular 18",
+    "ngx-intl-tel-input",
 		"intl-tel-input",
 		"phone number",
 		"validation"
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/webcat12345/ngx-intl-tel-input/issues"
+		"url": "https://github.com/shout/ngx-intl-tel-input/issues"
 	},
 	"devDependencies": {
 		"@types/google-libphonenumber": "^7.4.17"
