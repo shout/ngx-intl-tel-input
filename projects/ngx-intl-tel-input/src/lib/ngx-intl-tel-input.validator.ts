@@ -1,4 +1,4 @@
-import * as lpn from 'google-libphonenumber';
+import * as lpn from 'libphonenumber-js';
 
 /*
 We use "control: any" instead of "control: FormControl" to silence:
@@ -28,10 +28,10 @@ export const phoneNumberValidator = (control: any) => {
       let number: lpn.PhoneNumber;
 
       try {
-        number = lpn.PhoneNumberUtil.getInstance().parse(
+        number = lpn.parsePhoneNumberFromString(
           control.value.number,
           control.value.countryCode
-        );
+        )!;
       } catch (e) {
         if (isRequired) {
           return error;
@@ -46,8 +46,8 @@ export const phoneNumberValidator = (control: any) => {
           return error;
         } else {
           if (
-            !lpn.PhoneNumberUtil.getInstance().isValidNumberForRegion(
-              number,
+            !lpn.isValidPhoneNumber(
+              control.value.number,
               control.value.countryCode
             )
           ) {

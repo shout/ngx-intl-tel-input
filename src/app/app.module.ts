@@ -8,7 +8,6 @@ import { NgxIntlTelInputModule } from 'projects/ngx-intl-tel-input/src/lib/ngx-i
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -16,7 +15,6 @@ import { AppComponent } from './app.component';
     NgxIntlTelInputModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: []
 })
 export class AppModule {}
